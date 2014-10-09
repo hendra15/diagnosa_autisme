@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^([a-z0-9-]+)\.xhtml$ index.php?judul=$1 [L]
+RewriteRule ^jawab/([a-zA-Z0-9\ +-_]+)-([0-9]+)\.xhtml$ komentar.php?act=likom&nama=$1&qid=$2 [L]
